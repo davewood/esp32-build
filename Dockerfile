@@ -1,4 +1,4 @@
-FROM ubuntu:18.04
+FROM debian:buster
 
 ARG DEBIAN_FRONTEND=noninteractive
 
@@ -62,4 +62,3 @@ RUN echo '#!/bin/bash\n. ${IDF_PATH}/export.sh\nexec "$@"' >/entrypoint.sh \
 ENTRYPOINT ["/entrypoint.sh"]
 
 CMD ["/bin/bash"]
-

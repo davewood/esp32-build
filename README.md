@@ -26,7 +26,8 @@ cd ..
 ## Build micropython
 ```
 docker run \
-  --mount src="`pwd`/micropython",target=/tmp/micropython,type=bind esp32-build \
+  -v "`pwd`/micropython":/tmp/micropython \
+  esp32-build \
   bash -c 'cd /tmp/micropython/mpy-cross && make && \
            cd /tmp/micropython/ports/esp32 && idf.py build'
 ```

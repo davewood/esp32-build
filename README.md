@@ -12,7 +12,9 @@ git clone https://github.com/micropython/micropython
 ```
 
 ## Clone this repository
-`git clone https://github.com/davewood/esp32-build`
+```
+git clone https://github.com/davewood/esp32-build
+```
 
 ## Build docker image
 ```
@@ -28,3 +30,4 @@ docker run \
   bash -c 'cd /tmp/micropython/mpy-cross && make && \
            cd /tmp/micropython/ports/esp32 && idf.py build'
 ```
+

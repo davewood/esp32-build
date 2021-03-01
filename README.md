@@ -38,5 +38,5 @@ docker run \
   --device="/dev/ttyUSB0" \
   -v "`pwd`/micropython":/tmp/micropython \
   -it esp32-build \
-  bash -c 'cd /tmp/micropython/ports/esp32 && idf.py -p /dev/ttyUSB0 -v -b 74880 flash'
+  bash -c 'cd /tmp/micropython/ports/esp32 && idf.py -p /dev/ttyUSB0 -v flash'
 ```
